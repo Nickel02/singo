@@ -2,7 +2,7 @@ import discord, asyncio
 
 app = discord.Client()
 
-token = "ODM3MzI2NDU2MTY5OTU1Mzc0.YIq7Bw.WZBi72orKei8mBKDp7douHWiZtg"
+token = "your token"
 
 @app.event
 async def on_ready():
@@ -20,3 +20,4 @@ async def on_message(message):
         await message.channel.send('애쉬 신고할게')
 
 app.run(token)
+
