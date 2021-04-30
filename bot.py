@@ -1,10 +1,10 @@
 import discord
 import asyncio
+import os
+
 
 client = discord.Client()
 
-# 생성된 토큰을 입력해준다.
-token = "NULL"
 
 # 봇이 구동되었을 때 보여지는 코드
 @client.event
@@ -39,5 +39,5 @@ async def on_message(message):
 
     
 
-client.run(token)
+client.run(os.environ['token'])
 
