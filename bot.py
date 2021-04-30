@@ -3,7 +3,7 @@ import asyncio, discord
 client = discord.Client()
 
 # 생성된 토큰을 입력해준다.
-token = "ODM3MzI2NDU2MTY5OTU1Mzc0.YIq7Bw.WZBi72orKei8mBKDp7douHWiZtg"
+token = "ODM3MzI2NDU2MTY5OTU1Mzc0.YIq7Bw.oybBiLZ1TBIXicUuan_nPmvWOcE"
 
 # 봇이 구동되었을 때 보여지는 코드
 @client.event
