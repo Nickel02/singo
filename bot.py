@@ -2,7 +2,7 @@ import discord, asyncio
 
 app = discord.Client()
 
-token = "your token"
+token = "your_token"
 
 @app.event
 async def on_ready():
@@ -10,7 +10,6 @@ async def on_ready():
     print(app.user.name)
     print(app.user.id)
     print("==========")
-    await app.change_presence(game=discord.Game(name="안녕하세요 :)", type=1))
 
 @app.event
 async def on_message(message):
