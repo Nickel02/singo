@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 discord.py
 asyncio
+=======
+asyncio
+discord.py
+>>>>>>> 36caf94ffb767b06709bb015ada86693e0933467
