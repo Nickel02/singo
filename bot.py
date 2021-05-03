@@ -70,5 +70,5 @@ async def on_message(message):
 
     
 #bot.run(token)
-client.run(os.environ['token'])
+bot.run(os.environ['token'])
 
