@@ -21,7 +21,7 @@ async def 신고(ctx):
     channel = ctx.author.voice.channel
     await channel.connect()
     voice = bot.voice_clients[0]
-    voice.play(discord.FFmpegPCMAudio(executable = './ffmpeg/bin/ffmpeg.exe', source='./singo.mp3'))
+    voice.play(discord.FFmpegPCMAudio(source='./singo.mp3', **FFMPEG_OPTIONS))
 
     while voice.is_playing(): #노래 재생동안 딜레이
     	time.sleep(.1)
