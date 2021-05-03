@@ -6,7 +6,7 @@ import os
 bot = commands.Bot(command_prefix='*')
 
 
-token = "ODM3MzI2NDU2MTY5OTU1Mzc0.YIq7Bw.OjZHyvuECp6L1-fPbhE6nCQHDBM"
+#token = ""
 
 # 봇이 구동되었을 때 보여지는 코드
 @bot.event
@@ -69,6 +69,6 @@ async def on_message(message):
         return
 
     
-bot.run(token)
-#client.run(os.environ['token'])
+#bot.run(token)
+client.run(os.environ['token'])
 
