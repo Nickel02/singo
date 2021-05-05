@@ -23,11 +23,23 @@ async def 신고(ctx):
     voice = bot.voice_clients[0]
     voice.play(discord.FFmpegPCMAudio('singo.mp3'), after=lambda e: print('done', e))
 
-    while voice.is_playing(): #노래 재생동안 딜레이
+    while voice.is_playing():
     	time.sleep(.1)
         
     await voice.disconnect()
     
+@bot.command()
+async def 컷(ctx):
+    channel = ctx.author.voice.channel
+    await channel.connect()
+    voice = bot.voice_clients[0]
+    voice.play(discord.FFmpegPCMAudio('cut.mp3'), after=lambda e: print('done', e))
+
+    while voice.is_playing():
+    	time.sleep(.1)
+        
+    await voice.disconnect()
+
 @bot.command()
 async def p(ctx, url):
     channel = ctx.author.voice.channel
