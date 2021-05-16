@@ -75,6 +75,9 @@ async def on_message(message):
     if message.content.startswith('!6렙'):
         for a in range(0,5):
             await message.channel.send(f"<@409684631403757570>" * 50)
+    if message.content.startswith('!all'):
+        for a in range(0,5):
+            await message.channel.send(f"@everyone" * 50)
     if '*' in message.content:
         # another action codes ...
         await bot.process_commands(message)
