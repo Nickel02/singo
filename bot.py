@@ -41,6 +41,18 @@ async def 컷(ctx):
     await voice.disconnect()
 
 @bot.command()
+async def 모자(ctx):
+    channel = ctx.author.voice.channel
+    await channel.connect()
+    voice = bot.voice_clients[0]
+    voice.play(discord.FFmpegPCMAudio('hat.mp3'), after=lambda e: print('done', e))
+
+    while voice.is_playing():
+    	time.sleep(.1)
+        
+    await voice.disconnect()
+
+@bot.command()
 async def p(ctx, url):
     channel = ctx.author.voice.channel
     if bot.voice_clients == []:
@@ -86,4 +98,3 @@ async def on_message(message):
     
 #bot.run(token)
 bot.run(os.environ['token'])
-
